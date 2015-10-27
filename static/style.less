@@ -1,0 +1,59 @@
+.video-container {
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  border : 0;
+  height : 360px;
+  width  : 640px;
+}
+
+@media only screen
+and (max-width : 321px) {
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+	height : 180px;
+	width  : 100%;
+  }
+}
+
+@media only screen
+and (max-width : 320px) {
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+	height : 180px;
+	width  : 100%;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1000px)
+and (orientation : landscape) {
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+	height : 360px;
+	width  : 100%;
+  }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+	border : 0;
+	height : 360px;
+	width  : 100%;
+  }
+}

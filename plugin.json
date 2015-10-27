@@ -1,0 +1,13 @@
+{
+  "id": "nodebb-plugin-cn-video",
+  "name": "NodeBB Plugin CN Video",
+  "description": "A NodeBB plugin that allows users to embed Youku/Tudou/QQ/Iqiyi/etc videos",
+  "url": "https://github.com/gogoout/nodebb-plugin-cn-video",
+  "library": "./index.js",
+  "hooks": [
+	{"hook": "filter:parse.post", "method": "parse", "priority": 6}
+  ],
+  "less": [
+	"static/style.less"
+  ]
+}
