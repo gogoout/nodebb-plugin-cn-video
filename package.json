@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/gogoout/nodebb-plugin-cn-video/issues"
   },
-  "homepage": "https://github.com/gogoout/nodebb-plugin-cn-video#readme"
+  "homepage": "https://github.com/gogoout/nodebb-plugin-cn-video#readme",
+  "nbbpm": {
+    "compatibility": "^0.6.0 || ^0.7.0 || ^0.8.0"
+  }
 }
