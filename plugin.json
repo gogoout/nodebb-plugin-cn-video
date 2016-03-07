@@ -5,9 +5,21 @@
   "url": "https://github.com/gogoout/nodebb-plugin-cn-video",
   "library": "./index.js",
   "hooks": [
-	{"hook": "filter:parse.post", "method": "parse", "priority": 6}
+    {
+      "hook": "static:app.load",
+      "method": "init"
+    },
+    {
+      "hook": "filter:parse.post",
+      "method": "parse",
+      "priority": 6
+    }
   ],
   "less": [
-	"static/style.less"
+    "./static/style.less",
+    "./static/video.less"
+  ],
+  "scripts": [
+    "./public/lib/composerRedactor.js"
   ]
 }
