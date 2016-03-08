@@ -63,18 +63,12 @@ $(document).ready(function () {
 						});
 					},
 					insert     : function () {
-						var data = $('.videoPath').val();
-						data = '<a href="' + data + '">' + data + '</a>';
-						this.selection.restore();
+						this.placeholder.remove();
+						var target = '';
+						var link = $('.videoPath').val();
+						var text = $('.videoPath').val();
+						this.link.set(text, link, target);
 						this.modal.close();
-						var current = this.selection.getBlock() || this.selection.getCurrent();
-						if (current) {
-							$(current).after(data);
-						}
-						else {
-							this.insert.html(data);
-						}
-						this.code.sync();
 					}
 				};
 			};
