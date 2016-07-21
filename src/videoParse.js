@@ -39,10 +39,14 @@ var regexs = {
 	qq   : [
 		//http://v.qq.com/cover/d/dx0qrf7tskzdprn.html?vid=(c0170z7ahr8)
 		/<a href="(?:http?:\/\/)?v.qq.com\/cover\/\w\/\w*.html\?vid=(\w*)(&.*)?"[^<]*?>.[^<]*<\/a>/gm,
+		//http://v.qq.com/x/cover/dx0qrf7tskzdprn.html?vid=(c0170z7ahr8)
+		/<a href="(?:http?:\/\/)?v.qq.com\/x\/cover\/\w*.html\?vid=(\w*)(&.*)?"[^<]*?>.[^<]*<\/a>/gm,
 		//http://v.qq.com/cover/n/nwpc69jp1freit0/(j0018p8jjv9).html
 		//http://v.qq.com/page/n/n/9/(n0157o4ddn9).html
 		//http://v.qq.com/boke/page/o/0/9/(o0170u5gah9).html
-		/<a href="(?:http?:\/\/)?v.qq.com(?:\/\w*){3,5}\/(\w*).html(\?.*)?"[^<]*?>.[^<]*<\/a>/gm
+		/<a href="(?:http?:\/\/)?v.qq.com(?:\/\w*){3,5}\/(\w*).html(\?.*)?"[^<]*?>.[^<]*<\/a>/gm,
+		//http://v.qq.com/x/page/(n0157o4ddn9).html
+		/<a href="(?:http?:\/\/)?v.qq.com\/x(?:\/\w*){1,5}\/(\w*).html(\?.*)?"[^<]*?>.[^<]*<\/a>/gm,
 	],
 	sohu : [
 		//http://my.tv.sohu.com/us/(240033200)/(81568145).shtml
