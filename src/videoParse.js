@@ -3,8 +3,9 @@
  */
 var VideoParse = {};
 
-var _ = module.parent.require('underscore'),
-	winston = module.parent.require('winston');
+var nodebb = require('./nodebb'),
+	_ = nodebb.underscore;
+//	winston = nodebb.winston;
 
 var VIDEO_CONTAINER_START = '<div class="video-container">',
 	VIDEO_CONTAINER_END = '</div>',
@@ -63,15 +64,15 @@ var regexs = {
 };
 
 VideoParse.parse = function (content, callback) {
-	winston.info('[cn-video] start parsing');
+//	winston.info('[cn-video] start parsing');
 	_(regexs).each(function (regex, key) {
-		winston.info('[cn-video] test ' + key);
+//		winston.info('[cn-video] test ' + key);
 		if (!_.isArray(regex)) {
 			regex = [regex];
 		}
 		regex.forEach(function (eachRegex) {
 			if (eachRegex.test(content)) {
-				winston.info('[cn-video] test pass: ' + key);
+//				winston.info('[cn-video] test pass: ' + key);
 				content = content.replace(eachRegex, embeds[key]);
 			}
 		})
