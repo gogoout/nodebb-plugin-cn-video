@@ -36,7 +36,8 @@ var regexs = {
 	],
 	//http://v.youku.com/v_show/id_(XNTExOTQxOTI4).html
 	//http://v.youku.com/v_show/id_(XNTExOTQxOTI4==).html
-	youku: /<a href="(?:http?:\/\/)?(?:v\.)youku.com\/v_show\/id_([\w\-_=]+)\.html(\?.[^<]*)?"[^<]*?>.[^<]*<\/a>/gm,
+	//http://v.youku.com/v_show/id_(XMTc2MTc5Mzk2NA==).html#paction
+	youku: /<a href="(?:http?:\/\/)?(?:v\.)youku.com\/v_show\/id_([\w\-_=]+)\.html(\?.[^<]*)?(#.[^<]*)?"[^<]*?>.[^<]*<\/a>/gm,
 	qq   : [
 		//http://v.qq.com/cover/d/dx0qrf7tskzdprn.html?vid=(c0170z7ahr8)
 		//http://v.qq.com/x/cover/dx0qrf7tskzdprn.html?vid=(c0170z7ahr8)
@@ -53,12 +54,9 @@ var regexs = {
 		//http://share.vrs.sohu.com/(2911400)/v.swf&topBar=1&autoplay=false&plid=(9090903)&pub_catecode=0&from=page
 		/<a href="(?:http?:\/\/)?share.vrs.sohu.com\/(\d*)\/.[^<]*plid=(\d*)[^<]*?>.[^<]*<\/a>/gm
 	],
-	letv : [
-		//http://www.letv.com/ptv/vplay/(23212663).html
-		/<a href="(?:http?:\/\/)?www\.letv\.com\/ptv\/vplay\/(\d*).html(\?.[^<]*)?"[^<]*?>.[^<]*<\/a>/gm,
-		//http://www.letv.com/ptv/vplay/(24720802).html#vid=24720802
-		/<a href="(?:http?:\/\/)?www\.letv\.com\/ptv\/vplay\/(\d*).html(#.[^<]*)?"[^<]*?>.[^<]*<\/a>/gm
-	],
+	//http://www.letv.com/ptv/vplay/(23212663).html
+	//http://www.letv.com/ptv/vplay/(24720802).html#vid=24720802
+	letv : /<a href="(?:http?:\/\/)?www\.letv\.com\/ptv\/vplay\/(\d*).html(\?.[^<]*)?(#.[^<]*)?"[^<]*?>.[^<]*<\/a>/gm,
 	//(http://player.video.qiyi.com/a8b09f0f71fd62a3feaafbcf622ec768/0/493/v_19rrkxax2c.swf-albumId=455057800-tvId=455057800-isPurchase=0-cnId=7)
 	iqiyi: /<a href="((?:http?:\/\/)?player.video.qiyi.com\/.[^<]*)"[^<]*?>.[^<]*<\/a>/gm
 };
