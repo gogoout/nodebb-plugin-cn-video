@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-cn-video",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A NodeBB plugin that allows users to embed Youku/Tudou/QQ/Iqiyi/etc videos",
   "main": "index.js",
   "scripts": {
