@@ -14,7 +14,7 @@ var VIDEO_CONTAINER_START = '<div class="video-container">',
 
 var embeds = {
 	tudou: '<iframe class="tudou-plugin" src="http://www.tudou.com/programs/view/html5embed.action?type=0&code=$2&lcode=$1&resourceId=339959839_06_05_99" ' + VIDEO_FRAME_ATTRS + '></iframe>',
-	youku: '<iframe class="youku-plugin" src="http://player.youku.com/player.php/sid/$1==/v.swf" ' + VIDEO_FRAME_ATTRS + '></iframe>',
+	youku: '<iframe class="youku-plugin" src="http://player.youku.com/embed/$1" ' + VIDEO_FRAME_ATTRS + '></iframe>',
 	qq   : '<iframe class="qq-plugin" src="https://v.qq.com/iframe/player.html?vid=$1&auto=0" ' + VIDEO_FRAME_ATTRS + '></iframe>',
 //		sohu: '<embed src="http://share.vrs.sohu.com/my/v.swf&topBar=1&id=81762952&autoplay=false&from=page" type="application/x-shockwave-flash"  wmode="Transparent" allowscriptaccess="always" quality="high" ' + VIDEO_FRAME_ATTRS + '/></embed>'
 //		sohu : '<iframe class="sohu-plugin" src="http://tv.sohu.com/upload/static/share/share_play.html#$1_$2_0_9001_0" ' + VIDEO_FRAME_ATTRS + '></iframe>',
